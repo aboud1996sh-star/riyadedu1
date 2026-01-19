@@ -12,7 +12,11 @@ const siteData = {
             telegramLink: "https://t.me/Abdalmohimentaha1"
         },
         appDownloadLink: "assets/app/riyad-edu.apk.zip", // رابط ملف التطبيق المضغوط
-        appVideoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // رابط الفيديو التعريفي للتطبيق
+        appVideoUrl: "", // رابط الفيديو التعريفي للتطبيق
+        social: {
+            facebook: "https://facebook.com/riyadedu",
+            instagram: "https://instagram.com/riyadedu"
+        }
     },
 
     // شرائح العرض (بانرات إعلانية للدورات)

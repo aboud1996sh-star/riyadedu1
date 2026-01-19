@@ -58,6 +58,15 @@ function initSiteContent() {
             </div>
         `;
     }
+    // تعبئة روابط التواصل الاجتماعي
+    const socialContainer = document.querySelector('.social-links');
+    if (socialContainer && siteData.general.social) {
+        socialContainer.innerHTML = `
+            <a href="${siteData.general.social.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="${siteData.general.social.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="${siteData.general.contact.telegramLink}" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        `;
+    }
 }
 
 // --- Slider Logic ---
