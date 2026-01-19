@@ -4,13 +4,9 @@
 :root {
     /* Brand Colors - Mauve/Purple Identity */
     --primary: #8e44ad;
-    /* Rich Mauve */
     --primary-dark: #6c3483;
-    /* Deep Purple */
     --secondary: #9b59b6;
-    /* Lighter Mauve */
     --accent: #e056fd;
-    /* Vivid Orchid */
 
     /* Neutrals */
     --dark: #2c3e50;
@@ -175,32 +171,15 @@ img {
     color: var(--dark);
 }
 
-/* --- Hero Slider (Animated Mesh) --- */
+/* --- Hero Slider --- */
 .hero-slider {
     margin-top: var(--header-height);
     height: 550px;
     position: relative;
     overflow: hidden;
-    /* Purple Gradient */
-    background: linear-gradient(-45deg, #6c3483, #8e44ad, #9b59b6, #6c3483);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    background: #1a1a1a;
     border-radius: 0 0 50px 50px;
-    box-shadow: 0 20px 50px rgba(108, 52, 131, 0.3);
-}
-
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .slide {
@@ -211,26 +190,15 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     opacity: 0;
     transition: opacity 0.8s ease;
-    padding: 20px;
-    background-size: cover;
+    padding: 60px 20px;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.slide::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    /* Dark overlay to make text pop */
     z-index: 1;
 }
 
@@ -239,28 +207,27 @@ img {
     z-index: 2;
 }
 
-/* Pattern Overlay */
-.hero-slider::before {
+/* Gradient overlay for text readability */
+.slide::before {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
     z-index: 1;
 }
 
 .slide-content {
     position: relative;
     z-index: 3;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    padding: 50px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(142, 68, 173, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 25px 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     max-width: 800px;
     transform: translateY(30px);
     transition: transform 0.8s ease;
@@ -271,16 +238,15 @@ img {
 }
 
 .slide-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: #fff;
-    margin-bottom: 20px;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slide-content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 0;
 }
 
 .slider-controls button {
@@ -290,7 +256,8 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
     cursor: pointer;
@@ -303,7 +270,7 @@ img {
 }
 
 .slider-controls button:hover {
-    background: white;
+    background: var(--white);
     color: var(--primary);
     transform: translateY(-50%) scale(1.1);
 }
@@ -350,15 +317,12 @@ img {
 
 .section-title {
     margin-bottom: 3rem;
-    position: relative;
-    z-index: 2;
 }
 
 .section-title h2 {
     font-size: 2.8rem;
     color: var(--dark);
     margin-bottom: 10px;
-    position: relative;
     display: inline-block;
 }
 
@@ -372,17 +336,11 @@ img {
     border-radius: 10px;
 }
 
-.section-title p {
-    color: #666;
-    font-size: 1.2rem;
-}
-
 .app-video-container {
     max-width: 900px;
     margin: 40px auto;
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
     height: 0;
     border-radius: 20px;
     overflow: hidden;
@@ -408,11 +366,8 @@ img {
     align-items: center;
     gap: 20px;
     transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-    margin-top: 40px;
     text-decoration: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
 .btn-apk-large:hover {
@@ -421,19 +376,10 @@ img {
     background: var(--primary-dark);
 }
 
-.btn-apk-large i {
-    transition: transform 0.3s ease;
-}
-
-.btn-apk-large:hover i {
-    transform: scale(1.2) rotate(-10deg);
-}
-
 /* --- Contact Section --- */
 .contact {
     padding: 100px 0;
     background: var(--light);
-    position: relative;
 }
 
 .contact-info {
@@ -451,9 +397,6 @@ img {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    position: relative;
-    overflow: hidden;
 }
 
 .info-item:hover {
@@ -470,33 +413,6 @@ img {
     height: 90px;
     line-height: 90px;
     border-radius: 50%;
-    transition: all 0.4s ease;
-}
-
-.info-item:hover i {
-    background: var(--primary);
-    color: var(--white);
-    transform: rotateY(180deg);
-}
-
-.info-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--dark);
-}
-
-.info-item p {
-    color: #666;
-    font-size: 1.1rem;
-}
-
-.info-item a {
-    color: inherit;
-    transition: color 0.3s;
-}
-
-.info-item a:hover {
-    color: var(--primary);
 }
 
 /* --- Footer --- */
@@ -520,11 +436,6 @@ img {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.footer-logo h3 {
-    color: var(--white);
-    font-size: 1.6rem;
 }
 
 .footer-logo img {
@@ -554,21 +465,15 @@ img {
 .social-links a:hover {
     background: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4);
 }
 
 .footer-bottom {
     text-align: center;
     opacity: 0.7;
-    font-size: 1rem;
 }
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
-    .header .container {
-        padding: 0 20px;
-    }
-
     .nav-links {
         position: fixed;
         top: var(--header-height);
@@ -579,9 +484,8 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: 0.4s ease;
         z-index: 999;
-        box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -593,61 +497,17 @@ img {
     }
 
     .hero-slider {
-        height: 500px;
-        border-radius: 0 0 30px 30px;
-    }
-
-    .slide-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .app-video-container {
-        width: 95%;
-        border-width: 5px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-}
-
-/* --- Extra Small Screens (Mobile) --- */
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .logo img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .slide-content {
-        padding: 30px 20px;
+        height: 450px;
     }
 
     .slide-content h1 {
         font-size: 1.8rem;
     }
+}
 
-    .slide-content p {
-        font-size: 1rem;
-    }
-
-    .section-title h2 {
-        font-size: 2rem;
-    }
-
-    .app-video-container {
-        width: 100%;
-        border-radius: 15px;
-        margin: 20px auto;
+@media (max-width: 480px) {
+    .slide-content {
+        padding: 20px;
     }
 
     .btn-apk-large {
@@ -655,16 +515,5 @@ img {
         padding: 15px;
         font-size: 1rem;
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        border-radius: 20px;
-    }
-
-    .info-item {
-        padding: 30px 20px;
-    }
-
-    .info-item h3 {
-        font-size: 1.3rem;
     }
 }
