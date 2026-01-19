@@ -44,7 +44,7 @@ function initSiteContent() {
             <div class="info-item">
                 <i class="fab fa-whatsapp"></i>
                 <h3>واتساب</h3>
-                <p><a href="https://wa.me/${siteData.general.contact.whatsapp.replace(/\+/g, '').replace(/ /g, '')}" target="_blank">${siteData.general.contact.whatsapp}</a></p>
+                <p><a href="https://wa.me/${siteData.general.contact.whatsapp.replace(/\+/g, '').replace(/ /g, '')}" target="_blank" dir="ltr" style="display:inline-block;">${siteData.general.contact.whatsapp}</a></p>
             </div>
             <div class="info-item">
                 <i class="far fa-envelope"></i>
