@@ -11,7 +11,7 @@ const siteData = {
             telegram: "@Abdalmohimentaha1",
             telegramLink: "https://t.me/Abdalmohimentaha1"
         },
-        appDownloadLink: "assets/app/riyad-edu.apk", // رابط ملف التطبيق
+        appDownloadLink: "assets/app/riyad-edu.apk.zip", // رابط ملف التطبيق المضغوط
         appVideoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // رابط الفيديو التعريفي للتطبيق
     },
 
