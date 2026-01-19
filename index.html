@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياد التعليمية</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.jpg" alt="شعار">
+                <span id="nav-app-name">منصة رياد</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#app-section">التطبيق</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section (Ads) -->
+    <section id="hero" class="hero-slider">
+        <div class="slider-container" id="hero-slider-container">
+            <!-- Slides will be injected here by JS -->
+        </div>
+        <div class="slider-controls">
+            <button id="prev-slide"><i class="fas fa-chevron-right"></i></button>
+            <button id="next-slide"><i class="fas fa-chevron-left"></i></button>
+        </div>
+        <div class="slider-dots" id="slider-dots">
+            <!-- Dots will be injected here -->
+        </div>
+    </section>
+
+    <!-- App & Video Section -->
+    <section id="app-section" class="app-download">
+        <div class="container">
+            <div class="section-title">
+                <h2>حمل تطبيقنا الآن</h2>
+                <p>بوابتك لتعلم مهارات جديدة باحترافية</p>
+            </div>
+
+            <!-- App Intro Video -->
+            <div class="app-video-container">
+                <iframe id="app-video" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="app-content" style="text-align: center; margin-top: 40px;">
+                <p id="app-desc-text" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">
+                    <!-- Description from JS -->
+                </p>
+                <div id="app-download-container">
+                    <!-- Download button injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>تواصل معنا</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" id="contact-info">
+                    <!-- Contact info injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.jpg" alt="شعار">
+                    <h3 id="footer-app-name">منصة رياد</h3>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2024 <span id="copyright-name"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
