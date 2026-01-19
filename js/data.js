@@ -6,10 +6,10 @@ const siteData = {
         appName: "منصة رياد التعليمية",
         appDescription: "منصة تعليمية تقدم دورات احترافية في مجالات متعددة.",
         contact: {
-            whatsapp: "+966 50 000 0000",
-            email: "info@riyadedu.com",
-            telegram: "@riyadedu",
-            telegramLink: "https://t.me/riyadedu"
+            whatsapp: "+963 933 792 421",
+            email: "riyadedu79@gmail.com",
+            telegram: "@Abdalmohimentaha1",
+            telegramLink: "https://t.me/Abdalmohimentaha1"
         },
         appDownloadLink: "assets/app/riyad-edu.apk", // رابط ملف التطبيق
         appVideoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // رابط الفيديو التعريفي للتطبيق
