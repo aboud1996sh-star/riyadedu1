@@ -11,11 +11,11 @@ const siteData = {
             telegram: "@Abdalmohimentaha1",
             telegramLink: "https://t.me/Abdalmohimentaha1"
         },
-        appDownloadLink: "assets/app/riyad-edu.apk.zip", // رابط ملف التطبيق المضغوط
+        appDownloadLink: "./assets/app/riyad-edu.apk.zip", // رابط ملف التطبيق المضغوط
         appVideoUrl: "", // رابط الفيديو التعريفي للتطبيق
         social: {
-            facebook: "https://facebook.com/riyadedu",
-            instagram: "https://instagram.com/riyadedu"
+            facebook: "",
+            instagram: ""
         }
     },
 
